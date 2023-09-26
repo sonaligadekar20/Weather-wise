@@ -1,0 +1,43 @@
+.app-title{
+    text-align: center;
+    font-size: 40px;
+}
+.search{
+    text-align: center;
+    margin-top: 60px;
+}
+input{
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 40px;
+    outline: none;
+    width: 350px; 
+  }
+  .container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 400px;
+    margin-top: 70px;
+    text-align: center;
+    border: 2px solid rgb(123, 150, 237);
+    background-color:blanchedalmond;
+    border-radius: 12px;
+
+  }
+  .cityname{
+    font-size: 33px;
+    font-weight: bold;
+  }
+  .temperature{
+    font-size: 25px;
+    margin-top: 50px;
+  }
+  .visibility{
+    font-size: 22px;
+    margin-top: 50px;
+    
+  }

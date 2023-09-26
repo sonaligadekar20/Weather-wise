@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 export default function App() {
 
   const [weatherData, setWeatherData] = useState({});
-  const [city, setCity] = useState("pune");
+  const [city, setCity] = useState("Pune");
   // const [weatherDescription, setWeatherDescription] = useState("");
 
   async function loadWeatherData() {
@@ -30,10 +30,22 @@ export default function App() {
   }, [city])
   return (
     <div>
-      <h1>Weather App</h1>
-      <p>City: {weatherData?.name}</p>
-      <p>Temperature: {(weatherData?.main?.temp - 273). toFixed(2)} ºC </p>
-      <p>Visibility: {weatherData?.visibility} meters</p>
+      <h1 className='app-title'>Weather Wise</h1>
+
+      <div className='search'>
+        <input type = 'text' value={city} onChange={(e) => {
+          setCity(e.target.value);
+        }}
+        placeholder='Search Location'
+        />
+      </div>
+      <div className='container'>
+      <p className='cityname'>City : {weatherData?.name}</p>
+      <p className='temperature'>Temperature: {(weatherData?.main?.temp - 273). toFixed(2)} ºC </p>
+      <p className='visibility'>Visibility: {weatherData?.visibility} meters</p>
+
+      </div>
+     
     </div>
   )
 }
