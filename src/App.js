@@ -8,7 +8,7 @@ export default function App() {
 
   const [weatherData, setWeatherData] = useState({});
   const [city, setCity] = useState("Pune");
-  // const [weatherDescription, setWeatherDescription] = useState("");
+  const [weatherDescription, setWeatherDescription] = useState("");
 
   async function loadWeatherData() {
 
@@ -28,6 +28,10 @@ export default function App() {
   useEffect(()=>{
     loadWeatherData();
   }, [city])
+
+  useEffect(()=>{
+    setWeatherDescription(`${weatherData?.weather?.[0]?.main}(${weatherData?.weather?.[0]?.description})`)
+  })
   return (
     <div>
       <h1 className='app-title'>Weather Wise</h1>
@@ -41,8 +45,10 @@ export default function App() {
       </div>
       <div className='container'>
       <p className='cityname'>City : {weatherData?.name}</p>
-      <p className='temperature'>Temperature: {(weatherData?.main?.temp - 273). toFixed(2)} ºC </p>
-      <p className='visibility'>Visibility: {weatherData?.visibility} meters</p>
+      <p className='temperature'>Temperature : {(weatherData?.main?.temp - 273). toFixed(2)} ºC </p>
+
+      <p className='description'>Description : {weatherDescription}</p>
+      <p className='visibility'>Visibility : {weatherData?.visibility} meters</p>
 
       </div>
      
