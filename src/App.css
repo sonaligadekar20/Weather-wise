@@ -1,47 +1,79 @@
-.app-title{
-    text-align: center;
-    font-size: 40px;
+.app-title {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 45px;
+  /* color: rgb(16, 8, 77); */
+  color: white;
+  letter-spacing: 1.3px;
+  word-spacing: 4px;
 }
-.search{
-    text-align: center;
-    margin-top: 60px;
-}
-input{
-    font-size: 20px;
-    border: none;
-    border-radius: 20px;
-    padding: 10px;
-    padding-left: 40px;
-    outline: none;
-    width: 350px; 
-  }
-  .container{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 330px;
-    width: 400px;
-    margin-top: 70px;
-    text-align: center;
-    border: 2px solid rgb(123, 150, 237);
-    background-color:blanchedalmond;
-    border-radius: 12px;
 
-  }
-  .cityname{
-    font-size: 33px;
-    font-weight: bold;
-  }
-  .temperature{
-    font-size: 25px;
-    margin-top: 50px;
-  }
-  .description{
-    font-size: 22px;
-    margin-top: 30px;
-  }
-  .visibility{
-    font-size: 22px;
-    margin-top: 30px;
-    
-  }
+.weather-flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  /* border :5px solid black; */
+}
+
+.weather-container{
+  /* height: 400px; */
+  /* width: 400px; */
+  text-align: center;
+  /* border :2px solid black; */
+}
+.search {
+  text-align: center; 
+  /* margin-left: 100px; */
+  margin-top: 60px;
+}
+
+input {
+  font-size: 20px;
+  border: none;
+  border-radius: 17px;
+  padding: 10px;
+  padding-left: 40px;
+  outline: none;
+  /* width: 250px;  */
+  min-width: 350px;
+}
+
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 330px;
+  width: 400px;
+  margin-top: 70px;
+  /* text-align: center; */
+  border: 2px solid rgb(123, 150, 237);
+  background-color: blanchedalmond;
+  border-radius: 12px;
+
+}
+
+.cityname {
+  font-size: 43px;
+  font-weight: bold;
+}
+.img-cloud {
+  height: 150px;
+}
+.temperature {
+  font-size: 30px;
+  margin-top: 40px;
+  font-weight: 550;
+}
+.description {
+  font-size: 30px;
+  margin-top: 40px;
+  /* word-spacing: 10px; */
+  /* color: white; */
+  font-weight: 550;
+}
+
+.visibility {
+  font-size: 22px;
+  margin-top: 30px;
+
+}
