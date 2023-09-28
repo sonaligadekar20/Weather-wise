@@ -1,8 +1,10 @@
 .cardcontainer{
     height: 180px;
     width: 190px;
-    background-color: #ffffff5a;
+    /* background-color: #ffffff5a; */
+    background-color: #f1ebeb5a;
     border-radius: 10px;
+    margin: 30px;
 }
 .heading-card{
     font-size: 25px;
@@ -16,5 +18,4 @@
 .card-report{
     font-size: 22px;
     margin-left: 20px;
-    /* color: white; */
 }
